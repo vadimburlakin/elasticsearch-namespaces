@@ -1,0 +1,27 @@
+{
+  "name": "elasticsearch-namespaces",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node_modules/.bin/mocha -S --recursive ./tests/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "basic-auth": "^2.0.0",
+    "colors": "^1.1.2",
+    "debug": "^3.1.0",
+    "escape-string-regexp": "^1.0.5",
+    "express": "^4.16.2",
+    "glob-to-regexp": "^0.3.0",
+    "http-proxy": "^1.16.2",
+    "joi": "^13.0.2",
+    "js-yaml": "^3.10.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "should": "^13.1.3"
+  }
+}

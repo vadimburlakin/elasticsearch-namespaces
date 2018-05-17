@@ -1,0 +1,41 @@
+---
+# User Configuration
+
+users:
+  - username: user
+    password: password
+
+    # namespace: usr
+
+    api_restrictions:
+      order: allow,deny
+      deny:
+        indices: all
+      allow:
+        # apis:
+        #   - cluster.put_settings
+        #   - delete_script
+        # endpoints:
+        #   - /_cat
+        #   - match_type: regex
+        #     match_value: ^.+$
+        # methods:
+        #   - DELETE
+        indices:
+          - usr_*
+        # templates:
+        #   - match_type: regex
+        #     match_value: ^usr_
+        # pipelines:
+        #   - match_type: regex
+        #     match_value: ^usr_
+
+    # index_restrictions:
+    #   max_num_of_shards: 6
+    #   max_num_of_replicas: 1
+
+    # indexing_restrictions:
+    #   max_bulk_size: 500
+    #   max_docs_per_min: 600000
+
+...

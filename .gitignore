@@ -1,0 +1,14 @@
+.DS_Store
+
+/bower_components
+/node_modules
+
+# misc
+npm-debug.log
+
+/.tmp
+/.nyc_output
+/doc
+/coverage
+/build
+/.idea
